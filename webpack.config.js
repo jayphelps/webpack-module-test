@@ -4,12 +4,11 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: './dist/index.js'
+    filename: 'index.js'
   },
   resolve: {
     alias: {
-      test1: path.resolve(__dirname, 'packages/test1'),
-      test2: path.resolve(__dirname, 'packages/test2')
+      test: path.resolve(__dirname, 'packages/test')
     }
   },
   plugins: [
